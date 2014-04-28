@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+    <import resource="classpath*:websupport/applicationContextHibernate4.xml"/>
+    <context:component-scan base-package="cn.jason.rm">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:exclude-filter type="regex" expression="cn.jason.rm.interceptor*.*"/>
+    </context:component-scan>
+    <bean id="validator"
+          class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+          </bean>
+    <bean class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"/>
+    <bean name="testInjectService" class="cn.jason.rm.test.service.TestInjectService">
+        <property name="aClass" value="cn.jason.rm.test.service.Jsr349Service, cn.jason.rm.test.TestInject"/>
+    </bean>
+</beans>

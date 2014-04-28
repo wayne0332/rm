@@ -1,0 +1,12 @@
+.metro div .balloon{
+    padding: 20px;
+    margin-top: 40px;
+}
+.metro div .tab-control .tabs .infoTab {
+    border: 1px #eeeeee solid;
+    border-bottom: none;
+}
+.metro div .tab-control .tabs .active .infoTab {
+    border: 1px #eeeeee solid;
+    border-bottom: none;
+}

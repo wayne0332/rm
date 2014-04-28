@@ -1,0 +1,84 @@
+.flex-center {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.metro .login {
+    padding: 20px 40px 20px 60px;
+    border: 1px #ccc solid;
+    position: relative;
+    margin: 0 0 10px 0;
+    background-color: #fdfdfd !important;
+    min-height: 100px;
+}
+.metro .login:before,
+.metro .login:after {
+    display: table;
+    content: "";
+}
+.metro .login:after {
+    clear: both;
+}
+.metro .login:before {
+    position: absolute;
+    content: "登录";
+    left: 0px;
+    top: 30px;
+    color: #999999 !important;
+    margin: 5px 10px;
+    font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.02em;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.login > img {
+    margin: 5px;
+    display: inline-block;
+}
+.login .image-container {
+    margin: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper {
+    height:auto;
+}
+.Pos-Container {
+    background: none repeat scroll 0 0 #2E5F3E;
+    color: #4FA46B;
+    height: 400px;
+    margin: 20px auto 40px;
+    position: relative;
+    width: 100%;
+}
+.Absolute-Center {
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:#999;
+    width:50%;
+    height:50%;
+}
+
+.Center-Block {
+    background: none repeat scroll 0 0 #4FA46B;
+    color: #FFFFFF;
+    padding: 20px;
+}

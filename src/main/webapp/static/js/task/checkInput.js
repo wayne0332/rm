@@ -1,0 +1,1 @@
+$.getScript('/static/js/task/doItInput.js');

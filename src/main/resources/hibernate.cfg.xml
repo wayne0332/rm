@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">
+			jdbc:mysql://127.0.0.1:3306/rm
+		</property>
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="myeclipse.connection.profile">MySql</property>
+		<property name="dialect">
+			org.hibernate.dialect.MySQL5Dialect
+		</property>
+        <property name="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</property>
+        <property name="show_sql">true</property>
+		<!-- DB schema will be updated if needed -->
+		<!-- <property name="hbm2ddl.auto">update</property> -->
+		<mapping class="cn.jason.rm.po.Student" />
+		<mapping class="cn.jason.rm.po.Resource" />
+		<mapping class="cn.jason.rm.po.Year" />
+		<mapping class="cn.jason.rm.po.College" />
+		<mapping class="cn.jason.rm.po.Share" />
+		<mapping class="cn.jason.rm.po.Homework" />
+		<mapping class="cn.jason.rm.po.Task" />
+		<mapping class="cn.jason.rm.po.Teacher" />
+		<mapping class="cn.jason.rm.po.Subject" />
+        <mapping class="cn.jason.rm.po.Clazz" />
+	</session-factory>
+</hibernate-configuration>
